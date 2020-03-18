@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Forecast</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3 text-center">Weather Dashboard</h1>
+      <p class="lead text-center">Choose city - see weather - it is THAT Simple!</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->
+
+      <div class="row">
+        <div class="col-lg-4 jumbotron">
+
+            <div >
+            <h5>Search for a City</h5>
+            <input type="text" class="text-center" id="cityInput">
+            <input type="button" class="btn btn-primary btn-large" value="Submit" id="btnCityInput">
+            
+            <input type="button" class="btn btn-primary btn-large" value="Clear" id="btnCityClear">
+
+
+
+        </div>
+
+            
+            <div>
+            <ul id="cityList"> 
+                        
+
+
+            </ul>
+
+        </div>
+    
+        </div>
+        <div class="col-lg-8 jumbotron">
+          <div class="row"> 
+           
+               
+                <div class="card mt-6">
+                       
+                    <div class="card-body">
+                      <div class="col-md-12">
+                        <h1 class="text-center" id="cityNameForecast"></h1>
+                        <div id="forecastImg"></div>
+                        <p class="text-center" id="cityNameForecastT"></p>
+                        <p class="text-center" id="cityNameForecastH"></p>
+                        <p class="text-center" id="cityNameForecastW"></p>
+                        <p class="text-center" id="cityNameForecastU"></p>
+
+                        
+                    
+                      </div>  
+                    </div>
+                </div>
+            </div> 
+            <div class="row" id="5dayforecasttitle"><h1>5-day Forecast</h1></div>
+
+            <div class="row" id="5dayforecast">
+                
+                    <div class="card mt-2" style="background-color: blue; color: white;">
+                        <div class="card-body">
+
+                        <p id="1date"></p>
+                        <div id="1img"></div>
+                        <p id="1temp"></p>
+                        <p id="1humidity"></p>
+                    </div>
+
+                    </div>
+                    <div class="card mt-2" style="background-color: blue; color: white;">
+                        <div class="card-body">
+                        <p id="2date"></p>
+                        <div id="2img"></div>
+                        <p id="2temp"></p>
+                        <p id="2humidity"></p>
+                        </div>
+                    </div>
+                    <div class="card mt-2" style="background-color: blue; color: white;">
+                        <div class="card-body">
+                        <p id="3date"></p>
+                        <div id="3img"></div>
+                        <p id="3temp"></p>
+                        <p id="3humidity"></p>
+                        </div>
+                    </div>
+                    <div class="card mt-2" style="background-color: blue; color: white;">
+                        <div class="card-body">
+
+                        <p id="4date"></p>
+                        <div id="4img"></div>
+                        <p id="4temp"></p>
+                        <p id="4humidity"></p>
+                        </div>
+                    </div>
+                    <div class="card mt-2" style="background-color: blue; color: white;">
+                        <div class="card-body">
+                        <p id="5date"></p>
+                        <div id="5img"></div>
+                        <p id="5temp"></p>
+                        <p id="5humidity"></p>
+                        </div>
+                    </div>
+
+
+            </div>
+    
+        </div>
+    
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
